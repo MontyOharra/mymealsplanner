@@ -7,28 +7,28 @@ export default function Sidebar() {
     <aside className="w-64 bg-gray-700 p-4">
       <nav>
         <div className="flex items-center justify-between pb-8">
-          <Link className="text-2xl font-bold" href="/dashboard">
+          <Link href="/dashboard" className="text-2xl font-bold" >
             MyMealsPlanner
           </Link>
         </div>
         <ul className="space-y-4">
           <li>
-            <a href="/dashboard" className="block hover:text-gray-300">
+            <Link href="/dashboard/meals" className="block hover:text-gray-300">
               Meals
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/dashboard/settings" className="block hover:text-gray-300">
+            <Link href="/dashboard/foods" className="block hover:text-gray-300">
               Foods
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/dashboard/analytics"
+            <Link
+              href="../grocery-list"
               className="block hover:text-gray-300"
             >
               Grocery List
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
